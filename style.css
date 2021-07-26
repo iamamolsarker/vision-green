@@ -12,7 +12,7 @@
   position: relative;
 }
 /*Background Overlay code start*/
-section > * {
+.top-section > * {
   position: relative;
   z-index: 2;
 }
@@ -118,4 +118,43 @@ nav ul li a:hover {
   font-weight: 700;
   text-align: center;
   margin-top: 30px;
+  color: #292d3d;
+}
+.climate-change {
+  padding: 120px 0;
+}
+.climate-change h1 {
+  color: #292d3d;
+  font-size: 60px;
+  font-family: "Playfair Display", serif;
+  text-align: center;
+  margin-bottom: 20px;
+}
+.climate-change ul li {
+  margin: 30px 0;
+}
+.carbon-free {
+  background-color: rgb(223, 143, 24);
+  background-image: url(images/second-bg.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  padding: 150px 0;
+  position: relative;
+}
+.carbon-free > * {
+  position: relative;
+  z-index: 3;
+}
+.carbon-free::after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  background: rgba(255, 235, 205, 0.575);
+  z-index: 1;
+  opacity: 0.7;
+  top: 0;
+  left: 0;
 }
