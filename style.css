@@ -11,6 +11,7 @@
   height: 640px;
   position: relative;
 }
+/*Background Overlay code start*/
 section > * {
   position: relative;
   z-index: 2;
@@ -25,7 +26,7 @@ section > * {
   background-color: rgba(0, 0, 0, 0.7);
   z-index: 1;
 }
-
+/*Background Overlay code end*/
 .container {
   max-width: 1200px;
   margin: 0 auto;
@@ -53,6 +54,9 @@ nav ul li a {
   text-decoration: none;
   text-transform: capitalize;
   color: #fff;
+}
+nav ul li a:hover {
+  color: #ff5b00;
 }
 
 .content {
@@ -87,4 +91,31 @@ nav ul li a {
   border-radius: 50px;
   text-transform: uppercase;
   font-weight: 600;
+}
+.countries {
+  display: flex;
+  padding: 100px 0;
+}
+.one-third {
+  width: 33.33%;
+}
+.flag {
+  display: block;
+  margin: auto;
+  border-radius: 50%;
+  border: 7px solid #e3e3e3;
+}
+.one-third > h3 {
+  font-family: "Playfair Display", serif;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 20px;
+  font-size: 20px;
+}
+.container > h2 {
+  font-family: "playfair Display", serif;
+  font-size: 50px;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 30px;
 }
